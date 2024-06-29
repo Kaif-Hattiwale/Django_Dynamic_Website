@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% block content %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Clean Blog - Start Bootstrap Theme</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+       
+        <!-- Page Header-->
+        <header class="masthead" style="background-image: url({% static 'assets/img/bg7.gif' %})">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="page-heading">
+                            <h1>About KAIF</h1>
+                            <span class="subheading"> We are known for.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Main Content-->
+        <main class="mb-4">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <p>
+                            <span style="color: blueviolet;" >Welcome to [KAIF], </span>where we're dedicated to helping businesses thrive in the digital landscape.?</p>
+                        <p><span style="color: blueviolet;">Our Mission
+                              To enchance the seo to it's best use,</span> we believe in the power of organic search to transform businesses. Our mission is to empower companies of all sizes to reach their full potential online by leveraging the latest SEO strategies and technologies.</p>
+                        <p><span style="color: blueviolet;">Who We Are</span>
+                            We're a team of passionate SEO experts, digital marketers, and tech enthusiasts committed to delivering exceptional results for our clients. With years of experience in the industry, we've honed our skills and developed innovative approaches to drive organic traffic, increase visibility, and boost conversions.</p>
+                            
+                          <p><span style="color: blueviolet;"> What Sets Us Apart
+                            At [KAIF], </span> we don't just follow trends—we set them. We stay ahead of the curve by constantly learning, experimenting, and adapting to the ever-evolving landscape of search engine optimization. Our proactive approach ensures that our clients stay ahead of their competition and achieve sustainable growth.</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        {% endblock content %}
+        

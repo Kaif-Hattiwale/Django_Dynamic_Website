@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block content %}
+{% load static %}
+  
+<header class="masthead" style="background-image: url({% static 'assets/img/bg5.gif' %})">
+  <div class="container position-relative px-4 px-lg-5">
+      <div class="row gx-4 gx-lg-5 justify-content-center">
+          <div class="col-md-10 col-lg-8 col-xl-7">
+              <div class="site-heading">
+                  <h1>KAIF BLOG</h1>
+                  <span class="subheading">A blog post of stories and experinces.</span>
+              </div>
+          </div>
+      </div>
+  </div>
+</header>
+
+    <div class="card mt-4">
+        <div class="card-header">
+            {{post.author}} | {{post.created_on}}
+        </div>
+        <div class="card-body">
+            <h5 class-="card-title">{{post.title}}</h5>
+            <hr>
+            <p class="card-text">{{post.content | safe}}</p>
+        </div>
+    </div> 
+{% endblock content %}
